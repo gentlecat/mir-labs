@@ -1,0 +1,134 @@
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform0 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#attackstartendtimes> ;
+    vamp:step_size "64"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#attackstartendtimes_output_attackstartendtimes> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform1 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#logattacktime> ;
+    vamp:step_size "64"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#logattacktime_output_logattacktime> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform3 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#rms> ;
+    vamp:step_size "1024"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#rms_output_rms> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform4 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralcentroid> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralcentroid_output_spectralcentroid> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform5 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralcrest> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralcrest_output_spectralcrest> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform6 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralflatness> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralflatness_output_spectralflatness> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform7 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralflux> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralflux_output_spectralflux> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform8 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralkurtosis> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralkurtosis_output_spectralkurtosis> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform9 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralrolloff> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:parameter_binding [
+        vamp:parameter [ vamp:identifier "rolloffthreshold" ] ;
+        vamp:value "95"^^xsd:float ;
+    ] ;
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralrolloff_output_spectralrolloff> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform10 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralskewness> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralskewness_output_spectralskewness> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform11 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralspread> ;
+    vamp:step_size "512"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#spectralspread_output_spectralspread> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform12 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#temporalcentroid> ;
+    vamp:step_size "1024"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#temporalcentroid_output_temporalcentroid> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform13 a vamp:Transform ;
+    vamp:plugin <http://vamp-plugins.org/rdf/plugins/mir-edu#zerocrossingrate> ;
+    vamp:step_size "1024"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:plugin_version """1""" ; 
+    vamp:output <http://vamp-plugins.org/rdf/plugins/mir-edu#zerocrossingrate_output_zerocrossingrate> .
